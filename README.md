@@ -7,7 +7,7 @@ Devsphere is a blogging platform designed specifically for developers worldwide.
 ### Features:
 - **User Authentication:** Secure user registration and login system using Passport.js.
 - **Create and Delete Posts:**  Users can publish their blogs and have full control over their posts.
-- **Comments**Users can comment on other developers' posts, fostering engagement and collaboration.
+- **Comments:** Users can comment on other developers' posts, fostering engagement and collaboration.
   
 ---
 
