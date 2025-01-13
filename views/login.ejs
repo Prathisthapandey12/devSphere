@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Register or Login</title>
+  <link rel="stylesheet" href="/styles.css"> <!-- Link to your CSS file -->
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body>
+  
+  <div class="w-full h-screen flex text-sm" >
+    
+    <h1 class="mt-2 ml-2 text-xl font-bold ">devsphere</h1>
+    <h1 class="mt-2 ml-2"><img width="30" height="30" src="https://img.icons8.com/ios-filled/50/mesh.png" alt="mesh"/></h1>
+    <div class="w-2/3 min-h-screen flex items-center justify-center">
+      <div class="flex flex-col items-center gap-8" >
+        <h1 class=" font-semibold text-3xl">sign In</h1>
+        <div class="">
+        <form class="mt-14 " action="/login" method="POST">
+          <div>
+            <input class=" w-80 border-2 rounded-lg" type="email" name="username" placeholder=" Email">
+          </div>
+          <div>
+            <input class=" w-80 mt-2 border-2 rounded-lg" type="password"  name="password" placeholder=" Password">
+          </div>
+          <button class="mt-8 ml-14 h-8 w-40 bg-blue-600 border-1 text-white text-m font-bold rounded-lg hover:bg-blue-800" type="submit">Login</button>
+        </form>
+        </div>
+      </div>
+    </div>
+
+    
+    <div class="bg-blue-900 min-h-screen w-1/3 flex items-center justify-center">
+      <div class="">
+        <h1 class="font-semibold text-center text-white text-xl">sign Up</h1>
+        <form class="mt-14" action="/register" method="POST">
+          <div>
+            <input class="w-60 border-2 rounded-lg" type="text" name="fullname" placeholder=" Fullname">
+          </div>
+          <div>
+            <input class=" w-60 border-2 mt-2 rounded-lg" name="username" placeholder=" Username">
+          </div>
+          <div>
+            <input class="w-60 border-2 mt-2 rounded-lg" type="email" name="email" placeholder=" Email">
+          </div>
+          <div>
+            <input class="w-60 border-2 mt-2 rounded-lg" type="password" name="password" placeholder=" Password">
+          </div>
+          <button class="w-40 bg-gray-100  h-6 ml-10  mt-8 text-m border-2 font-bold rounded-lg hover:bg-gray-600" type="submit">Register</button>
+        </form>
+      </div>
+    </div>
+
+  </div>
+
+
+</body>
+</html>
