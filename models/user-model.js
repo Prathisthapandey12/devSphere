@@ -1,5 +1,10 @@
 const mongoose = require('mongoose');
-mongoose.connect("mongodb://127.0.0.1:27017/devSphere")
+
+
+mongoose.connect("mongodb+srv://prathisthapandey10:SHREEradha@cluster0.k7hxy.mongodb.net/devSphere?retryWrites=true&w=majority")
+.then(() => console.log('MongoDB Connected'))
+.catch(err => console.error('MongoDB Connection Error:', err));
+
 
 const userSchema = mongoose.Schema({
 
@@ -8,9 +13,9 @@ const userSchema = mongoose.Schema({
     password : String,
     username : String,
     blogs : [
-        { 
+        {
             type : mongoose.Schema.Types.ObjectId,
-             ref : "blog"
+            ref : "blog"
         }
     ],
     comments : [
